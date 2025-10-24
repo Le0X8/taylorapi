@@ -5,3 +5,9 @@ export interface Release {
 	tracks: string[];
 	type: 'album' | 'single' | 'ep';
 }
+
+export interface Song {
+	title: string;
+	release: Release;
+	lyrics: string[];
+}

@@ -1,4 +1,5 @@
 import type { Release } from '$lib';
+import { TheLifeOfAShowgirlAlbum } from '$lib/releases/The Life of a Showgirl';
 import { json } from '@sveltejs/kit';
 
 const releases: Release[] = [
@@ -254,26 +255,7 @@ const releases: Release[] = [
 		],
 		type: 'album'
 	},
-	{
-		title: 'The Life of a Showgirl',
-		date: '2025-10-03',
-		cover: 'showgirl',
-		tracks: [
-			'The Fate of Ophelia',
-			'Elizabeth Taylor',
-			'Opalite',
-			'Father Figure',
-			'Eldest Daughter',
-			'Ruin The Friendship',
-			'Actually Romantic',
-			'Wi$h Li$t',
-			'Wood',
-			'CANCELLED!',
-			'Honey',
-			'The Life of a Showgirl'
-		],
-		type: 'album'
-	}
+	TheLifeOfAShowgirlAlbum
 ];
 
 export function GET() {
